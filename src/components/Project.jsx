@@ -10,8 +10,7 @@ function Project() {
                <h1 className='text-center text-gray-600 font-bold text-7xl my-10 ' >PROJECTS</h1>
                <p className='text-white text-center m-3 text-xl'>These are some cool  projects i have created.</p>
            </div>   
-<div class="text-gray-400 body-font m-10 justify-center p-10 "  data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
+<div class="text-gray-400 body-font m-10 justify-center p-10 ">
 {/*data-aos="fade-right"
      data-aos-offset="300"
   data-aos-easing="ease-in-sine"*/}
