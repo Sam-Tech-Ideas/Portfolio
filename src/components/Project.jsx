@@ -66,7 +66,7 @@ function Project() {
       <p  className="mx-auto text-base"></p>
       </a>
         <div class=" bg-opacity-40 shadow-2xl bg-[#242484] rounded-lg relative">
-          <img class="h-60 rounded w-full object-cover object-center mb-6 flex flex-wrap content-center" src="./public/img_4.jpg" alt="content"/>
+          <img class="h-60 rounded w-full object-cover object-center mb-6 flex flex-wrap content-center" src="/img_4.jpg" alt="content"/>
           
         </div>
       </div>
