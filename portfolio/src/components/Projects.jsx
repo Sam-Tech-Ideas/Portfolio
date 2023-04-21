@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 const Projects = () => {
@@ -71,7 +72,9 @@ const Projects = () => {
                 return (
             <div class="lg:w-1/3 sm:w-1/2 p-4">
               <div class="flex relative z-0">
-                <img
+                <Image
+                priority={true}
+                layout='fill'
                   alt="gallery"
                   class="absolute inset-0 w-full h-full object-cover object-center "
                   src={project.image}
