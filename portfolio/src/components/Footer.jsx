@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
+import { FaArrowAltCircleUp, FaGithub } from "react-icons/fa";
+import { animateScroll } from "react-scroll";
 
 export default function Footer() {
   return (
@@ -18,8 +19,15 @@ export default function Footer() {
             <FaGithub size={20} />
           </Link>
         </div>
-
-     
+      </div>
+      <div>
+        <a  className=""
+          onClick={() =>
+            animateScroll.scrollToTop({ duration: 500, offset: -50 })
+          }
+        >
+          <FaArrowAltCircleUp size={40} className="text-teal-300 fixed right-2 bottom-5" />
+        </a>
       </div>
     </footer>
   );

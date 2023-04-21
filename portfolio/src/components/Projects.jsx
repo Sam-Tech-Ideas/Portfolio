@@ -24,7 +24,7 @@ const Projects = () => {
       description: "A hospital react native app for booking appointments",
       stacks: " React Native and Tailwindcss",
       url: "",
-      image: "",
+      image: "/hosp.png",
     },
 
     {
@@ -53,7 +53,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div>
+    <div id='project'>
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-8 mx-auto">
           <div class="flex flex-col text-center w-full mb-4">
@@ -70,10 +70,10 @@ const Projects = () => {
 
                 return (
             <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
+              <div class="flex relative z-0">
                 <img
                   alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center object-fit"
+                  class="absolute inset-0 w-full h-full object-cover object-center "
                   src={project.image}
                 />
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">

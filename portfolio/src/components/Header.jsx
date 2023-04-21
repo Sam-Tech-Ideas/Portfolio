@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Navbar,
   MobileNav,
@@ -7,19 +7,16 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
-import { useEffect } from "react";
 
-export default function Header() {
-  const [openNav, setOpenNav] = useState(false);
+export default function Example() {
+  const [openNav, setOpenNav] = React.useState(false);
 
-useEffect(() => {
+  React.useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
-
-
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -30,7 +27,7 @@ useEffect(() => {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          About
+          Pages
         </a>
       </Typography>
       <Typography
@@ -40,7 +37,7 @@ useEffect(() => {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Skills
+          Account
         </a>
       </Typography>
       <Typography
@@ -50,7 +47,7 @@ useEffect(() => {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Projects
+          Blocks
         </a>
       </Typography>
       <Typography
@@ -60,7 +57,7 @@ useEffect(() => {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Blogs
+          Docs
         </a>
       </Typography>
     </ul>
@@ -75,11 +72,11 @@ useEffect(() => {
             href="#"
             className="mr-4 cursor-pointer py-1.5 font-medium"
           >
-            <span className="text-lg text-black">SamTechIdeas</span>
+           SamTechIdeas
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
-             
+
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -121,11 +118,20 @@ useEffect(() => {
         </div>
         <MobileNav open={openNav}>
           {navList}
-          {/* <Button variant="gradient" size="sm" fullWidth className="mb-2">
-            <span>Hire Me!</span>
-          </Button> */}
+
         </MobileNav>
       </Navbar>
+
     </>
   );
 }
+
+// import Link from "next/link";
+// import { Link as ScrollLink } from "react-scroll";
+
+// <Link href="/about">
+//   <ScrollLink to="about" smooth={true}>
+//     Go to About
+//   </ScrollLink>
+// </Link>;
+

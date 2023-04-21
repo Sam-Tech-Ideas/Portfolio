@@ -6,13 +6,16 @@ import { FiPhone, FiMail } from "react-icons/fi";
 const ContactSection = () => {
     
   return (
-    <div>
-      <div className="text-center py-6 mx-8 ">
-        <h1 className="text-2xl font-bold text-black">Reach out to me</h1>
-        <p className="text-gray-600">
-          Need to get in touch? Feel free to contact me via phone or email.
+    <div id="contact">
+      <div class="flex flex-col text-center w-full mb-4">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+          Reach out to me
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        Need to get in touch? Feel free to contact me via phone or email.
         </p>
       </div>
+     
 
       <div className="flex items-center justify-center space-x-8">
         <Link href="tel:+233559911251" className="text-teal-400">
