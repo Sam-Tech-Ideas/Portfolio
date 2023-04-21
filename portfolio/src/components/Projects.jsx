@@ -2,17 +2,55 @@ import React from 'react'
 
 const Projects = () => {
   const portfolio = [
- {
-  id:1,
-  description:"",
-  stacks:"",
- },
+    {
+      id: 1,
+      description: "Lawyers' landing page with a contact form and a blog.",
+      stacks: "React, Tailwind, Vercel",
+      url: "https://lawyer-project.vercel.app/",
+      image: "/law.png",
+    },
 
- {
-   id:2,
-    
- }
+    {
+      id: 2,
+      description:
+        "A nice looking Bootsrtap 5 portfolio site  for my students to practice their skills",
+      stacks: " HTML, CSS, Bootstrap5, Vercel",
+      url: "https://portfolio-bootstrap-one.vercel.app/",
+      image: "/portfolio.png",
+    },
 
+    {
+      id: 3,
+      description: "A hospital react native app for booking appointments",
+      stacks: " React Native and Tailwindcss",
+      url: "",
+      image: "",
+    },
+
+    {
+      id: 4,
+      description:
+        "A simple flutter app for a doctors with splash screens and onboarding screens ",
+      stacks: "Flutter ",
+      url: "https://github.com/Sam-Tech-Ideas/medics_app",
+      image: "/medics.jpg",
+    },
+
+    {
+      id: 5,
+      description: "",
+      stacks: "",
+      url: "",
+      image: "",
+    },
+
+    {
+      id: 6,
+      image: "",
+      description: "",
+      stacks: "",
+      url: "",
+    },
   ];
   return (
     <div>
@@ -27,132 +65,37 @@ const Projects = () => {
             </p>
           </div>
           <div class="flex flex-wrap -m-4">
+            {
+              portfolio.map((project) => {
+
+                return (
             <div class="lg:w-1/3 sm:w-1/2 p-4">
               <div class="flex relative">
                 <img
                   alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/600x360"
+                  class="absolute inset-0 w-full h-full object-cover object-center object-fit"
+                  src={project.image}
                 />
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
+              
                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    Shooting Stars
+                  {
+                    project.stacks
+                  }
                   </h1>
                   <p class="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
+                    {
+                      project.description
+                    }
                   </p>
                 </div>
               </div>
             </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/601x361"
-                />
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
-                  </h1>
-                  <p class="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/603x363"
-                />
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    The 400 Blows
-                  </h1>
-                  <p class="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/602x362"
-                />
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    Neptune
-                  </h1>
-                  <p class="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/605x365"
-                />
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    Holden Caulfield
-                  </h1>
-                  <p class="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/606x366"
-                />
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    Alper Kamu
-                  </h1>
-                  <p class="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
+                )
+              })
+            }
+
+          
           </div>
         </div>
       </section>

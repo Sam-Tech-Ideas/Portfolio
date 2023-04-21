@@ -9,62 +9,89 @@ const skill = [
     {
         id: 1,
         icon: <FaPython size={40} />,
+        class:"text-yellow-500",
+        name:"Python"
+
 
     },
 
     {
         id: 2,
         icon: <FaReact size={40} />,
+        class:"text-blue-500",
+        name:"React"
     },
 
     {
         id: 3,
         icon: <RiFlutterFill size={40} />,
+        class:"text-blue-500",
+        name:"Flutter"
     },
 
     {
         id: 4,
         icon: <FaHtml5 size={40} />,
+        class:"text-yellow-500",
+        name:"HTML"
     },
 
     {
         id: 5,
         icon: <FaCss3 size={40} />,
+        class:"text-blue-500",
+        name:"CSS"
     },
 
     {
         id: 6,
         icon: <SiDjango size={40} />,
+        class:"text-green-500",
+        name:"Django"
     },
 
     {
         id: 7,
         icon: <SiRedux size={40} />,
+        class:"text-purple-500",
+        name:"Redux"
     },
 
     {
         id: 8,
         icon: <FaBootstrap size={40} />,
+        class:"text-purple-500",
+        name:"Bootstrap"
     },
 
     {
         id: 9,
         icon: <SiTailwindcss size={40} />,
+        class:"text-blue-500",
+        name:"Tailwind",
+
     },
 
     {
         id: 10,
         icon: <SiPostgresql size={40} />,
+        class:"text-blue-500",
+        name:"PostgreSQL"
     },
 
     {
         id: 11,
         icon: <SiFirebase size={40} />,
+        class:"text-yellow-500",
+        name:"Firebase"
     },
 
     {
         id: 12,
         icon: <FaNode size={40} />,
+        class:"text-green-500"  ,
+        name:"Node"
+
     }
 
 ]
@@ -82,16 +109,22 @@ const skill = [
 
             </p>
           </div>
-          <div class="flex flex-wrap -m-4 text-center">
+          <div class="flex flex-wrap -m-4 text-center justify-center items-center">
             {
                 skill.map((item) => {
                     return (
+                      <Tooltip
+                        content={item.name}
+                        animate={{
+                          mount: { scale: 1, y: 0 },
+                          unmount: { scale: 0, y: 25 },
+                        }}
+                      >
                         <div class="p-4 md:w-1/6 sm:w-1/3 ">
-                            <div class=" px-4 py-6 rounded-lg">
-                                {item.icon}
-                            </div>
+                          <div class={item.class}>{item.icon}</div>
                         </div>
-                    )
+                      </Tooltip>
+                    );
                 }
                 )
             }
@@ -110,11 +143,7 @@ export default Skills
 
 
 //  <Tooltip
-//       content="Material Tailwind"
-//       animate={{
-//         mount: { scale: 1, y: 0 },
-//         unmount: { scale: 0, y: 25 },
-//       }}
+     
 //     >
 //       <Button variant="gradient">Show Tooltip</Button>
 //     </Tooltip>
