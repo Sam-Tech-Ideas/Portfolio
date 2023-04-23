@@ -109,18 +109,18 @@ const skill = [
 
             </p>
           </div>
-          <div class="flex flex-wrap -m-4 text-center justify-center items-center">
+          <div class=" flex-wrap -m-4 text-center justify-center items-center flex">
             {
                 skill.map((item) => {
                     return (
-                      <Tooltip
+                      <Tooltip className=''
                         content={item.name}
-                        animate={{
+                        animate={{ 
                           mount: { scale: 1, y: 0 },
                           unmount: { scale: 0, y: 25 },
                         }}
                       >
-                        <div class="p-4 md:w-1/6 sm:w-1/3 ">
+                        <div class="p-4 md:w-1/6 sm:w-1/3  ">
                           <div class={item.class}>{item.icon}</div>
                         </div>
                       </Tooltip>

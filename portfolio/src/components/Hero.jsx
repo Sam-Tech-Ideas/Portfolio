@@ -13,24 +13,25 @@ const Hero = () => {
             </h1>
             <p class="mb-8 leading-relaxed">
               Meet
-              <span className="font-bold  text-teal-600"> Samuel Agyemang</span>, a talented computer scientist and
-              software developer passionate about creating effective
-              technological solutions. With an eye for detail and a dedication
-              to excellence, Samuel has helped countless clients bring their
-              visions to life. Ready to take on any challenge, Samuel is
-              committed to delivering high-quality work that exceeds
-              expectations and inspires others to do their best. Let's work
-              together to create something amazing.
+              <span className="font-bold  text-teal-600"> Samuel Agyemang</span>
+              , a talented computer scientist and software developer passionate
+              about creating effective technological solutions. With an eye for
+              detail and a dedication to excellence, Samuel has helped countless
+              clients bring their visions to life. Ready to take on any
+              challenge, Samuel is committed to delivering high-quality work
+              that exceeds expectations and inspires others to do their best.
+              Let's work together to create something amazing.
             </p>
             <div class="flex w-full md:justify-start justify-center items-end">
               <button class="inline-flex text-white bg-green-300 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">
-                Hire Me!
+                <a href="#contact">Hire Me!</a>
               </button>
-              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Download Resume
-              </button>
+              <a href="/resume.docx" download>
+                <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                  Download resume
+                </button>
+              </a>
             </div>
-            <p class="text-sm mt-2 text-gray-500 mb-8 w-full">.</p>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <Image

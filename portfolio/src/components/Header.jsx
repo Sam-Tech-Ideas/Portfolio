@@ -7,6 +7,8 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
+import Link from "next/link";
+import { ScrollLink } from "react-scroll";
 
 export default function Example() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -24,41 +26,41 @@ export default function Example() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal hover:text-green-400"
       >
-        <a href="#" className="flex items-center">
-          Pages
-        </a>
+        <Link href={"#about"} className="flex items-center">
+          About
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal hover:text-green-400"
       >
-        <a href="#" className="flex items-center">
-          Account
-        </a>
+        <Link href={"#skills"} className="flex items-center">
+          Skills
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 hover:text-green-400 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Blocks
-        </a>
+        <Link href={"#project"} className="flex items-center">
+          Projects
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal hover:text-green-400"
       >
-        <a href="#" className="flex items-center">
-          Docs
-        </a>
+        <Link href={"#contact"} className="flex items-center">
+          Contact
+        </Link>
       </Typography>
     </ul>
   );
@@ -72,7 +74,7 @@ export default function Example() {
             href="#"
             className="mr-4 cursor-pointer py-1.5 font-medium"
           >
-           SamTechIdeas
+            SamTechIdeas
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
@@ -116,12 +118,8 @@ export default function Example() {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
-          {navList}
-
-        </MobileNav>
+        <MobileNav open={openNav}>{navList}</MobileNav>
       </Navbar>
-
     </>
   );
 }
@@ -134,4 +132,3 @@ export default function Example() {
 //     Go to About
 //   </ScrollLink>
 // </Link>;
-

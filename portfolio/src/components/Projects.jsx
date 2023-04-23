@@ -29,30 +29,30 @@ const Projects = () => {
       image: "/hosp.png",
     },
 
-    {
-      id: 4,
-      description:
-        "A simple flutter app for a doctors with splash screens and onboarding screens ",
-      stacks: "Flutter ",
-      url: "https://github.com/Sam-Tech-Ideas/medics_app",
-      image: "/medics.jpg",
-    },
+    // {
+    //   id: 4,
+    //   description:
+    //     "A simple flutter app for a doctors with splash screens and onboarding screens ",
+    //   stacks: "Flutter ",
+    //   url: "https://github.com/Sam-Tech-Ideas/medics_app",
+    //   image: "/medics.jpg",
+    // },
 
-    {
-      id: 5,
-      description: "",
-      stacks: "",
-      url: "",
-      image: "",
-    },
+    // {
+    //   id: 5,
+    //   description: "",
+    //   stacks: "",
+    //   url: "",
+    //   image: "",
+    // },
 
-    {
-      id: 6,
-      image: "",
-      description: "",
-      stacks: "",
-      url: "",
-    },
+    // {
+    //   id: 6,
+    //   image: "",
+    //   description: "",
+    //   stacks: "",
+    //   url: "",
+    // },
   ];
   return (
     <div id='project'>
